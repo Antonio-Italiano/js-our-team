@@ -13,7 +13,8 @@ body{
 #cards .col {
     /* min-height: 330px; */
     /* border: 1px dashed black; */
-    padding: 20px;
+    padding: 10px;
+
 }
 
 #cards .col .card {

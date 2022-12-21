@@ -11,8 +11,7 @@ const team = [
         {fullName: 'Barbara Ramos',   role: 'Graphic Designer',     image: 'barbara-ramos-graphic-designer.jpg'},
     ]
 
-
-const cards = [];
+let card = '';
 // CREO UN CICLO (FOR) PER MOSTRARE LE INFORMAZIONI IN CONSOLE 
 for (let i = 0; i < team.length; i++) {
     // console.log(
@@ -21,9 +20,9 @@ for (let i = 0; i < team.length; i++) {
     //     `Image:` + ` ` + team[i].image);
         
     // COPIO LA STRUTTURA STATICA FATTA IN HTML    
-    let card =
+    card +=
     `
-    <div class="col">
+    <div class="col mb-2">
         <div class="card">
         <figure>
             <img src="img/${team[i].image}" alt="${team[i].fullName}">
@@ -34,11 +33,10 @@ for (let i = 0; i < team.length; i++) {
         </div>
         </div>
     </div>
-    `
-    cards.push(card)
-        
+    `        
     }
     
-    cardElement.innerHTML = cards;
-    console.log(cards)
+
+cardElement.innerHTML = card;
+// console.log(card)
     
