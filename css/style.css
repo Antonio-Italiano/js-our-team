@@ -7,12 +7,12 @@ body{
     background-color: lightgray;
 }
 .container-xsm{
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
 }
 #cards .col {
     /* min-height: 330px; */
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     padding: 20px;
 }
 
